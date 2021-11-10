@@ -1,17 +1,22 @@
-// let myAge = 34
-// let humanDogRatio = 7
-// let myDogAge = myAge * humanDogRatio
-
-let counter = 0
-
+let count = 0
+let countEl = document.getElementById('count-el')
+let saver = ''
+let saveEl = document.getElementById('save-el')
 
 function increment() {
-    counter = counter + 1
-    document.getElementById('count').innerHTML = counter 
-    console.log('the button was clicked')
+    count += 1
+    countEl.innerText = count 
+    // console.log('the button was clicked')
 }
 
-function reset() {
-    counter = 0
-    document.getElementById('count').innerHTML = counter 
+function save(){
+    // saver = count + ' - '
+    saveEl.innerText += count + ' - '
 }
+
+
+function reset() {
+    count = 0
+    countEl.innerHTML = count 
+}
+
