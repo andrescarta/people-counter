@@ -8,15 +8,21 @@
     <title>People Counter</title>
 </head>
 <body>
-    <h1> People counter</h1>
-    <h2 id='count-el'>0</h2>
-    <button id="increment-btn" onclick="increment()">INCREMENT</button>
-    <br>
-    <button id="save-btn" onclick="save()">SAVE</button>
-    <br>
-    <p id='save-el'>Previous entires:</p>
-    <br>
-    <button id="increment-btn" onclick="reset()">RESET</button>
+    <div id='content'>
+
+        <h1> People counter</h1>
+        <h2 id='count-el'>0</h2>
+        <button id="increment-btn" onclick="increment()">INCREMENT +</button>
+        <br>
+        <button id="decreace-btn" onclick="decreace()">DECREACE -</button>
+        <br>
+        <br>
+        <button id="save-btn" onclick="save()">SAVE</button>
+        <br>
+        <p id='save-el'>Previous entires: </p>
+        <br>
+        <p id='total-el'>TOTAL:</p>
+    </div>
 
 </body>
 <script src="index.js"></script>
